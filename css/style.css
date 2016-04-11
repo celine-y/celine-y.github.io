@@ -239,7 +239,7 @@ ul.built {
     width: 100%;
 }
 #slide1 {
-    background: url('../img/cyslide1.jpg') 50% 0 no-repeat fixed;
+    background: url('../img/cyslide1.JPG') 50% 0 no-repeat fixed;
     color: #fff;
     height: 600px;
     margin: 0;
@@ -248,7 +248,7 @@ ul.built {
 }
 /*
 #slide2 {
-    background: url(../img/cyslide2.jpg) 50% 0 no-repeat fixed;
+    background: url('../img/cyslide2.JPG') 50% 0 no-repeat fixed;
     color: #fff;
     height: 600px;
     margin: 0;
@@ -266,7 +266,7 @@ ul.built {
     padding: 200px 0;
 }
 #slide3 {
-    background: url(../img/cyslide3.jpg) 50% 0 no-repeat fixed;
+    background: url('../img/cyslide3.JPG') 50% 0 no-repeat fixed;
     color: #fff;
     height: 600px;
     padding: 170px 0 0 0;
@@ -279,7 +279,7 @@ ul.built {
     padding: 200px 0;
 }
 #slide5 {
-    background: url(../img/cyslide5.jpg) 50% 0 no-repeat fixed;
+    background: url('../img/cyslide5.JPG') 50% 0 no-repeat fixed;
     height: 200px;
     margin: 0 auto;
     padding: 250px 0;
