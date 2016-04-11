@@ -28,6 +28,8 @@ h2 {
     color: #fff;
     margin: 0;
     padding: 0;
+	position: relative;
+	z-index:1;
 }
 h3 {
     font-family: "Josefin Sans";
@@ -35,6 +37,16 @@ h3 {
     font-size: 16px;
     text-align: center;
     margin: 5px 0;
+    padding: 0;
+    z-index: 1;
+    position: relative;
+}
+h4{
+	font-family = "Josefin Sans";
+	font-weight: normal;
+	font-size: 14px;
+	text-align: left;
+	margin: 5px 0;
     padding: 0;
     z-index: 1;
     position: relative;
@@ -199,6 +211,14 @@ a.rpanel:hover {
     display: block;
     position: relative;
     top: -38px;
+}
+
+.fade_dark {
+	background-color: #000;
+	opacity: 0.75;
+	width: 960px;
+	height: 350px;
+	margin-top: -150px;
 }
 
 /*= BUTTONS
