@@ -6,7 +6,7 @@ Author: Samuel Dalusung
 /*= GENERAL STYLING
 --------------------------------------------------------*/
 
-body {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -42,7 +42,7 @@ h3 {
     position: relative;
 }
 h4{
-	font-family = "Josefin Sans";
+	font-family: "Josefin Sans";
 	font-weight: normal;
 	font-size: 14px;
 	text-align: left;
@@ -51,12 +51,18 @@ h4{
     z-index: 1;
     position: relative;
 }
+
+li{
+	list-style: none;
+}
+
+
 .center {
     margin: 0 auto;
 }
 .content {
     margin: 0 auto;
-    width: 960px;
+    padding: 70px 10% 70px 10%;
 }
 .clear {
     clear: both;
@@ -85,6 +91,13 @@ a.lpanel:hover {
 a.rpanel:hover {
     color: #fff;
 }
+.centerOutside{
+    display: inline-flex;
+}
+.centering{
+    margin: auto;
+}
+
 /*= HEADER & NAVIGATION
 --------------------------------------------------------*/
 
@@ -93,6 +106,7 @@ a.rpanel:hover {
     /*
 	background: url('../img/header-bg.png');
 	*/
+    z-index: 100;
 	background-color: #fff;
     height: 70px;
     position: fixed;
@@ -111,9 +125,8 @@ a.rpanel:hover {
 }
 
 #nav {
-    width: 410px;
+    margin: 20px 20px auto;
     float: right;
-    margin-top: 20px;
 }
 #logo a {
     color: #000;
@@ -142,84 +155,43 @@ a.rpanel:hover {
     font-size: 16px;
     text-decoration: none;
     font-family: 'Lato';
-	font-weight: lighter;
 }
 #nav li a.active {
     color: #00759C;
     opacity: 1;
-    border-bottom: 2px solid #fff;
+    cursor: default;
 }
 #nav li a:hover {
     color: #99ffff;
     opacity: 1;
 }
-/*= QUOTES AND SOME ELEMENTS
+/*= TRANSITIONS STYLES
 --------------------------------------------------------*/
-.contact{
-	text-align: left;
+#connect-url li a {
+    color: #fff;
+    opacity: 1;
+    font-size: 16px;
+    text-decoration: none;
+	font-weight: lighter;
 }
 
-.subtitle {
-	font-size: 20px;
+.sliding-url {
+	display: inline-block;
+    cursor: pointer;
+}
+.sliding-url:after {
+	content: '';
+	display: block;
+	height: 3px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.sliding-url:hover:after {
+	width: 100%;
+	background: white;
 }
 
-.page_title{
-	font-family: "Josefin Sans", serif;
-	font-weight: bold;
-	font-size: 40px;
-	text-align: left;
-	color: #00759C;
-}
-
-.quotes {
-    font-family: "Josefin Sans", serif;
-    font-weight: normal;
-    font-size: 30px;
-    margin: 50px auto;
-}
-.author_name_dark {
-    font-family: "Lato";
-	font-weight: bold;
-    margin: 70px 0 0 75px;
-    color: #00759C;
-    font-size: 20px;
-}
-.author_name_light {
-	font-family: "Lato";
-	font-weight: bold;
-    margin: 70px 0 0 75px;
-    color: #99ffff;
-    font-size: 20px;
-}
-
-.quotes_container {
-    width: 800px;
-    margin: 0 auto;
-}
-
-#divider {
-    background: url('../img/divider.png')no-repeat;
-    width: 300px;
-    height: 35px;
-    margin: 0px auto 27px auto;
-}
-#ribbon {
-    background: url('../img/ribbon.png')no-repeat;
-    width: 251px;
-    height: 48px;
-    margin: 0 auto;
-    display: block;
-    position: relative;
-    top: -38px;
-}
-
-.fade_dark {
-	background-color: #000;
-	opacity: 0.75;
-	width: 960px;
-	height: 350px;
-	margin-top: -150px;
-}
 
 /*= BUTTONS
 --------------------------------------------------------*/
@@ -253,57 +225,67 @@ ul.built {
 /*= SLIDES STYLING
 --------------------------------------------------------*/
 
-#slide1,
-#slide2 {
-    width: 100%;
+[id^=slide]{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    color: white;
 }
+
 #slide1 {
-    background: url('../img/cyslide1.JPG') 50% 0 no-repeat fixed;
-    color: #fff;
+    background: url('../img/cyslide1.JPG') 50% no-repeat fixed;
+    background-size: cover;
+    /*color: #fff;
     height: 600px;
     margin: 0;
     padding: 200px 0 260px 0;
-    background-size: cover;
+    background-size: cover;*/
 }
-/*
-#slide2 {
+
+/*#slide2 {
     background: url('../img/cyslide2.JPG') 50% 0 no-repeat fixed;
     color: #fff;
     height: 600px;
     margin: 0;
     padding: 200px 0 260px 0;
     background-size: cover;
-}
-*/
+}*/
 
 #slide2 {
     background-color: #BCC2C4;
     color: #333333;
-    height: 300px;
+    /*height: 300px;
     margin: 0 auto;
     overflow: hidden;
-    padding: 200px 0;
+    padding: 200px 0;*/
 }
+
 #slide3 {
     background: url('../img/cyslide3.JPG') 50% 0 no-repeat fixed;
-    color: #fff;
+    background-size: cover;
+    /*color: #fff;
     height: 600px;
     padding: 170px 0 0 0;
-    background-size: cover;
+    background-size: cover;*/
 }
 #slide4 {
-    background-color: #fff;
-    color: #333333;
-    height: 300px;
-    padding: 200px 0;
+    background-color: black;
+    color: #fff;
+    /*height: 300px;
+    padding: 200px 0;*/
 }
 #slide5 {
     background: url('../img/cyslide5.JPG') 50% 0 no-repeat fixed;
-    height: 200px;
+    color: white;
+    background-size: cover;
+    /*height: 200px;
     margin: 0 auto;
     padding: 250px 0;
     color: #fff;
-    background-size: cover;
+    background-size: cover;*/
+}
+.connect{
+    width: 75%;
 }
 /*= FOOTER 
 --------------------------------------------------------*/
@@ -319,4 +301,66 @@ ul.built {
 #copyright a {
     text-decoration: none;
     color: #fff;
+}
+/*= QUOTES AND SOME ELEMENTS
+--------------------------------------------------------*/
+.tight{
+    letter-spacing: -3px;
+}
+.contact{
+	text-align: left;
+}
+.page_title{
+	font-family: "Josefin Sans", serif;
+	font-weight: bold;
+	font-size: 40px;
+	text-align: left;
+	color: white;
+    margin-bottom: 10px;
+    border-bottom-style: solid;
+}
+
+.quotes_container {
+    margin: auto;
+    padding: 6%;
+}
+.quotes{
+    font-size: 30px;
+}
+.list{
+    display: table-caption;
+}
+.skills{
+    white-space: nowrap;
+}
+
+#divider {
+    background: url('../img/divider.png')no-repeat;
+    width: 300px;
+    height: 35px;
+    margin: 0px auto 27px auto;
+}
+#ribbon {
+    background: url('../img/ribbon.png')no-repeat;
+    width: 251px;
+    height: 48px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    top: -38px;
+}
+
+.fade_dark {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+/*Font Stylings
+----------------------------------------------------------*/
+.main_attn{
+    margin-bottom: 20px;
+}
+.subtitle {
+    text-align: center;
+    margin: 15px 0 auto;
+    font-size: 20px;
 }

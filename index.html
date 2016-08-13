@@ -6,86 +6,67 @@
     <link rel="shortcut icon" href="img/CY-logo.png">
 	<link rel="icon" href="img/CY-logo.png">
 	<title>Celine Yau</title>
+
+	<!---CSS sheeets-->
     <link rel="stylesheet" href="css/style.css" />
-    <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-    <link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <!-- Mighty Slider CSS -->
+    <link rel="stylesheet" href="css/cy_mighty.css" />
+    <link href="Mighty_slider/assets/css/style.css" rel="stylesheet">
+    <link href="Mighty_slider/src/css/mightyslider.css" rel="stylesheet">
+
+	<!--Fonts-->
+	<link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <script>
-        <!----- JQUERY FOR SLIDING NAVIGATION --->   
-        $(document).ready(function() { 
-            $('a[href*=#]').each(function() {  
-                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')   && location.hostname == this.hostname   && this.hash.replace(/#/, '')) {   
-                    var $targetId = $(this.hash),
-                        $targetAnchor = $('[name=' + this.hash.slice(1) + ']');   
-                    var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;    
-                    if ($target) {     
-                        var targetOffset = $target.offset().top;
-
-                        <!----- JQUERY CLICK FUNCTION REMOVE AND ADD CLASS "ACTIVE" + SCROLL TO THE #DIV--->   
-                             
-                        $(this).click(function() {
-                            $("#nav li a").removeClass("active");
-                            $(this).addClass('active');      
-                            $('html, body').animate({
-                                scrollTop: targetOffset
-                            }, 1000);      
-                            return false;     
-                        });   
-                    }  
-                } 
-            });
-
-        });
-    </script>
-
-
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
 </head>
-
 <body>
-    <!----- LINK BACK TO THE TUTORIAL--->
-	<!--
-    <div id="demo_back">
-        <a href="#" class="lpanel">
-            << BACK TO THE 1STWEBDESIGN ARTICLE </a>
-                <a href="#" class="rpanel"> NEXT DEMO >> </a>
+<div class="outside">
+<div class="inside">
+    <div id="preloader">
+        <div id="status">
+            <div class="timer">Loading...</div>
+        </div>
     </div>
-	-->
 
     <!----- HEADER START--->
     <header id="header">
-        <div class="content">
+        <!--<div class="content">-->
             <div id="logo"><a href="">Celine Yau</a>
             </div>
 
             <nav id="nav">
                 <ul>
-                    <li><a href="#slide1" class="active" title="Next Section">Home</a>
+                    <li><a href="#slide1">Home</a>
                     </li>
-                    <li><a href="#slide2" title="Next Section">About</a>
+                    <li><a href="#slide2">About</a>
                     </li>
-                    <li><a href="#slide3" title="Next Section">Past Work</a>
+                    <li><a href="#slide3">Skills</a>
                     </li>
-                    <li><a href="#slide4" title="Next Section">Some</a>
+                    <li><a href="#slide4">Graphic Design</a>
                     </li>
-                    <li><a href="#slide5" title="Next Section">Connect</a>
+                    <li><a href="#slide5">Contact</a>
                     </li>
                 </ul>
             </nav>
-        </div>
+        <!--</div>-->
     </header>
     <!----- HEADER END--->
 
     <!----- SLIDES START --->
-    <div id="slide1">
-        <div class="content">
-            <h1 class ="main_attn">Celine Yau</h1>
+    <div id="slide1" class="centerOutside area">
+        <div class="centering">
+            <h1 class ="main_attn tight">Celine Yau</h1>
             <h3 class ="subtitle">Dedicated student & programmer</h3>
+            <h4 class="subtitle">Faculty of Engineering | University of Waterloo</h4>
         </div>
     </div>
 
-    <div id="slide2">
-        <div class="content">
+    <div id="slide2" class="centerOutside">
+        <div class="centering">
             <div class="quotes_container">
                 <h3 class="quotes">This website serves as a sample of my experience
 				with HTML, CSS, and design. The pictures were all taken by my
@@ -94,43 +75,107 @@
         </div>
     </div>
 
-
-    <div id="slide3">
-        <div class="content">
-            <div class="quotes_container">
-                <h3 class="quotes">Slide show of previous graphic design</h3>
+    <div id="slide3" class="centerOutside area">
+        <div class="connect centering">
+            <div class="quotes_container fade_dark">
+                <h2 class="page_title underline">Skills</h2>
+                <div class="skills">
+                    <p>HTML & CSS</p>
+                    <p>Java</p>
+                    <p>JavaScript</p>
+                    <p>Excel & VBA</p>
+                    <p>PHP & AJAX</p>
+                </div>
             </div>
         </div>
     </div>
 
 
-    <div id="slide4">
-        <div class="content">
-            <div class="quotes_container">
-				<h3 class="quotes">Credits???</h3>
-				<img src="#" align="left" />
-				<h4 class="author_name_light">First, Last</h4>
+    <div id="slide4" class="area">
+        <!-- PARENT -->
+        <div id="example" class="mightyslider_modern_skin">
+            <!-- FRAME -->
+            <div class="frame">
+                <!-- SLIDEELEMENT -->
+                <div class="slide_element">
+                    <!-- SLIDES -->
+                    <!-- NEW SLIDE: Music Banquet Ticket-->
+                    <div class="slide" data-mightyslider="
+                        cover: 'img/past-work/Music Banquet Ticket.JPG',
+                    ">
+                        <div class="mSCaption infoBlock topLeft" data-msanimation="{
+                            speed: 700,
+                            easing: 'easeOutQuint',
+                            style: {
+                                left: 30,
+                                opacity: 1,
+                            }
+                        }">
+                            <p>Please, use your <strong>arrow keys</strong> or <strong>swipe</strong> to browse my previous design work.</p>
+                        </div>
+                        <div class="credit">
+                            Music Banquet Tickets
+                        </div>
+                    </div>
+                    <!-- NEW SLIDE: Music Concert Ticket -->
+                    <div class="slide" data-mightyslider="
+                        cover: 'img/past-work/Spring Fever 2015.JPG',
+                    ">
+                        <div class="credit">
+                            Music Concert Ticket
+                        </div>
+                    </div>
+                    <!-- NEW SLIDE: Music Christmas Concert -->
+                    <div class="slide" data-mightyslider="
+                        cover: 'img/past-work/Christmas Concert 2014.JPG',
+                    ">
+                        <div class="credit">
+                            Holiday Concert Music Ticket
+                        </div>
+                    </div>
+                    <!-- END OF SLIDES -->
+                </div>
+                <!-- END OF SLIDEELEMENT -->
             </div>
+            <!-- END OF FRAME -->
         </div>
+        <!-- END OF PARENT -->
     </div>
 
-
-    <div id="slide5">
-        <div class="content">
-				<div class="quotes_container">
-					<h2  class ="page_title">Connect</h2>
-					<h3 class="contact">Connect through:</h3>
+    <div id="slide5" class="centerOutside area">
+        <div id="connect" class="connect centering">
+				<div class="quotes_container fade_dark">
+                    <h2  class ="page_title">Contact Me</h2>
+                    <div class="list">
+                        <h4 class = "sliding-url" id ="connect-url">
+                                <li><a href="https://ca.linkedin.com/in/celineyau">LinkedIn</a></li>
+                        </h4>
+                        <h4 class = "sliding-url" id ="connect-url">
+                                <li><a href="emailto: celine.yau@live.ca">Email</a></li>
+                        </h4>
+                    </div>
 				</div>
-				<div class = "fade_dark"></div>
-				<div id="copyright"><a href="http://www.1stwebdesigner.com/">Copyright 1stwebdesigner.com </a>
-				</div>	
         </div>
 
 
-    </div>
+    </div> <!----- SLIDES END --->
 
-    <!----- SLIDES END --->
+    <!--JavaScript sheets-->
 
+    <!--Mighty slider js-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>   
+    <script type="text/javascript" src="Mighty_slider/assets/js/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="Mighty_slider/assets/js/jquery.mobile.just-touch.js"></script>
+    <script type="text/javascript" src="Mighty_slider/src/js/tweenlite.js"></script>
+    <script type="text/javascript" src="Mighty_slider/src/js/mightyslider.min.js"></script>
+    <script type="text/javascript" src="js/pre-load.js"></script>
+    <script type="text/javascript" src="js/cy_mighty.js"></script>
+
+    <!--Navigation -->
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
+	<script type="text/javascript" src="js/nav-slide.js"></script>
+</div>
+</div>
 </body>
 
 </html>
