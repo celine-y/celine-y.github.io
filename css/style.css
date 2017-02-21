@@ -16,7 +16,6 @@ h1 {
     font-weight: normal;
     font-size: 55px;
     text-align: center;
-    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -25,7 +24,6 @@ h2 {
     font-weight: normal;
     font-size: 40px;
     text-align: center;
-    color: #fff;
     margin: 0;
     padding: 0;
 	position: relative;
@@ -69,7 +67,7 @@ li{
 }
 a.lpanel {
     float: left;
-    color: #e1e1e1;
+    color: #ecf2f9;
     font-size: 12px;
     font-family: "Lato";
 	font-weight: lighter;
@@ -78,7 +76,7 @@ a.lpanel {
 }
 a.rpanel {
     float: right;
-    color: #e1e1e1;
+    color: #ecf2f9;
     font-size: 12px;
     font-family: "Lato";
 	font-weight: lighter;
@@ -86,10 +84,10 @@ a.rpanel {
     margin: 7px 11px;
 }
 a.lpanel:hover {
-    color: #fff;
+    color: white;
 }
 a.rpanel:hover {
-    color: #fff;
+    color: white;
 }
 .centerOutside{
     display: inline-flex;
@@ -107,7 +105,7 @@ a.rpanel:hover {
 	background: url('../img/header-bg.png');
 	*/
     z-index: 100;
-	background-color: #fff;
+	background-color: white;
     height: 70px;
     position: fixed;
     margin-top: 0px;
@@ -129,7 +127,7 @@ a.rpanel:hover {
     float: right;
 }
 #logo a {
-    color: #000;
+    color: black;
     text-decoration: none;
     float: left;
     font-size: 30px;
@@ -157,7 +155,7 @@ a.rpanel:hover {
     font-family: 'Lato';
 }
 #nav li a.active {
-    color: #00759C;
+    color: #00aeef;
     opacity: 1;
     cursor: default;
 }
@@ -168,15 +166,14 @@ a.rpanel:hover {
 /*= TRANSITIONS STYLES
 --------------------------------------------------------*/
 #connect-url li a {
-    color: #fff;
     opacity: 1;
+    color: white;
     font-size: 16px;
     text-decoration: none;
 	font-weight: lighter;
 }
 
 .sliding-url {
-	display: inline-block;
     cursor: pointer;
 }
 .sliding-url:after {
@@ -200,8 +197,8 @@ button.btn-know {
     padding: 15px 47px;
     margin: 40px 38.8%;
     text-align: center;
-    border: 4px solid #fff;
-    color: #fff;
+    border: 4px solid white;
+    color: white;
     background: transparent;
     font-size: 19px;
     cursor: pointer;
@@ -210,7 +207,7 @@ button.btn-know {
     border-radius: 4px;
 }
 .btn-know:hover {
-    background: #fff;
+    background: white;
     color: transparent;
 }
 ul.built {
@@ -252,8 +249,8 @@ ul.built {
 }*/
 
 #slide2 {
-    background-color: #BCC2C4;
-    color: #333333;
+    background-color: #ecf2f9;
+    color: #00aeef;
     /*height: 300px;
     margin: 0 auto;
     overflow: hidden;
@@ -270,28 +267,30 @@ ul.built {
 }
 #slide4 {
     background-color: black;
-    color: #fff;
-    /*height: 300px;
+    /*
+    color: white;
+    height: 300px;
     padding: 200px 0;*/
 }
 #slide5 {
     background: url('../img/cyslide5.JPG') 50% 0 no-repeat fixed;
-    color: white;
     background-size: cover;
     /*height: 200px;
+    color: white;
     margin: 0 auto;
     padding: 250px 0;
     color: #fff;
     background-size: cover;*/
 }
-.connect{
+.boxing{
     width: 75%;
+    height: 60%;
 }
 /*= FOOTER 
 --------------------------------------------------------*/
 
 #copyright {
-    color: #fff;
+    color: white;
     font-family: "Lato";
     font-size: 14px;
 	font-weight: lighter;
@@ -300,7 +299,7 @@ ul.built {
 }
 #copyright a {
     text-decoration: none;
-    color: #fff;
+    color: white;
 }
 /*= QUOTES AND SOME ELEMENTS
 --------------------------------------------------------*/
@@ -315,23 +314,32 @@ ul.built {
 	font-weight: bold;
 	font-size: 40px;
 	text-align: left;
-	color: white;
     margin-bottom: 10px;
     border-bottom-style: solid;
+    margin: 0;
+}
+.border{
+    border-color: #00aeef;
+    border-width: thick;
+    border-style: solid;
 }
 
 .quotes_container {
     margin: auto;
     padding: 6%;
+    height: 100%;
 }
 .quotes{
     font-size: 30px;
 }
 .list{
-    display: table-caption;
+    display: inline-block;
 }
 .skills{
     white-space: nowrap;
+}
+.under-heading{
+    margin: 5% 0;
 }
 
 #divider {
@@ -351,7 +359,11 @@ ul.built {
 }
 
 .fade_dark {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.fade_light {
+    background: rgba(250, 250, 250, 0.4);
 }
 
 /*Font Stylings
@@ -363,4 +375,12 @@ ul.built {
     text-align: center;
     margin: 15px 0 auto;
     font-size: 20px;
+}
+
+.dark-font{
+    color: black;
+}
+
+.light-font{
+    color: white;
 }

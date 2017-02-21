@@ -28,7 +28,7 @@
   line-height: normal;
   font-weight: 300;
   text-shadow: rgba(0,0,0,0.7) 0 1px 0px;
-  color: #CCC;
+  color: #ecf2f9;
   background: #000;
   background: rgba(0,0,0,0.6);
   padding: 0 4px;
@@ -37,7 +37,7 @@
   text-transform: uppercase;
 }
 #example .credit a {
-  color: #FFF;
+  color: white;
   font-weight: 400;
 }
 .infoBlock {
@@ -47,14 +47,14 @@
   left: auto;
   max-width: 30%;
   padding-bottom: 0;
-  background: #FFF;
+  background: white;
   background: rgba(255, 255, 255, 0.6);
   overflow: hidden;
   padding: 20px;
   z-index: 1002;
 }
 .infoBlockLeftBlack {
-  color: #FFF;
+  color: white;
   background: #000;
   background: rgba(0,0,0,0.55);
   left: 90px;
@@ -80,7 +80,7 @@
   margin: 4px 0 0;
 }
 .infoBlock a {
-  color: #FFF;
+  color: white;
   text-decoration: underline;
 }
 
