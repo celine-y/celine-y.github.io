@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Simplifica";
+    src: url("fonts/Simplifica.ttf.eot");
+    src: 
+    url("fonts/Simplifica.ttf.woff") format("woff"),
+    url("fonts/Simplifica.tff.svg") format("svg");
+}
+
+.page-header, p, small, h3, h4, a {
+    font-family: 'Simplifica', sans-serif;
+}
+
+.page-header{
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+    font-variant: small-caps;
+}
+
+h1 {
+    font-size: 8vh;
+}
+
+p {
+    font-size: 3.5vh;
+}
+
+small, a {
+    font-size: 3vh;
+    text-transform: uppercase;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: peachpuff;
+    text-decoration: none;
+}
+
+#landing{
+    color: white;
+}
+
+#interests h1{
+    color: black;
+}
+
+.emphasis{
+    font-variant: small-caps;
+    font-size: 6.5vh;
+}
+
+.justify-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
