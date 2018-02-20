@@ -7,311 +7,194 @@
 	<link rel="icon" href="img/CY-logo.png">
 	<title>Celine Yau</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="node_modules/fullpage.js/dist/jquery.fullpage.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/flexboxgrid/css/flexboxgrid.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="css/slide-bg.css">
-    <link rel="stylesheet" type="text/css" href="css/typography.css">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!---CSS sheeets-->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Mighty Slider CSS -->
+    <link rel="stylesheet" href="css/cy_mighty.css" />
+    <link href="Mighty_Slider/assets/css/style.css" rel="stylesheet">
+    <link href="Mighty_Slider/src/css/mightyslider.css" rel="stylesheet">
 
-    <!-- jQuery -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!--Fonts-->
+	<link href="http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Josefin+Sans&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
-    <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-    <script src="node_modules/fullpage.js/vendors/jquery.easings.min.js"></script>
-
-    <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
-    <script type="text/javascript" src="node_modules/fullpage.js/vendors/scrolloverflow.min.js"></script>
-
-    <script type="text/javascript" src="node_modules/fullpage.js/dist/jquery.fullPage.js"></script>
-
-    <script type="text/javascript" src="index.js"></script>
 <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
 <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
 <body>
-    <div class="site-wrapper">
-        <div class="site-wrapper-inner">
-            <div id="fullpage">
-                <div class="section" id="landing">
-                    <div class="container">
-                        <div class="flex-grid vertical-spacing">
-                            <div class="row center-xs">
-                                <div class="col-10">
-                                    <div class="box box-container">
-                                        <div class="row center-xs center-sm start-md start-lg">
-                                            <div class="col-sm col-lg-6">
-                                                <div class="box-large">
-                                                    <div class="inner cover">
-                                                        <h1 class="page-header">WELCOME!</h1>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row center-xs">
-                                <div class="col-xs col-md col-lg-6">
-                                    <div class="box">
-                                        <p class="emphasis">You found the website of a creative, pasionate, and tech-savvy leader...</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row center-xs">
-                                <div class="box box-container">
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="box">
-                                                <small>Learn more about me</small>
-                                            </div>  
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="box box-container">
-                                                <div id="show-more">
-                                                    <i class="fa fa-chevron-down"></i>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="about">
-                    <div class="container">
-                        <div class="flex-grid">
-                            <div class="row start-xs">
-                                <div class="col-xs">
-                                    <div class="box">
-                                        <div class="center-col-wrapper justify-text">
-                                            <h1>About Me</h1>
-                                            <p>"If there's a will there's a way," my father taught me that
-                                                when I was six. I apply that to everything I attempt; it
-                                                makes me notoriously determined to complete the tasks I
-                                                set out to do.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-xs">
-                                    <div class="box overlay-grid">
-                                        <div class="top-right top-overlay">
-                                            <img class="img-fluid" src="img/CY-logo.png">
-                                        </div>
-                                        <div class="bottom-left">
-                                            <img class="rounded-circle img-fluid" src="img/aboutME.JPG">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="projects">
-                    <div class="full-height">
-                    <div class="highlight-test">
-                        <div class="container">
-                            <div class="flex-grid">
-                                <div class="row center-xs">
-                                    <div class="col-xs">
-                                        <h1>Projects</h1>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="flex-grid">
-                            <!-- First row of projects -->
-                            <div class="row">
-                                <div class="col-md">
-                                    <div class="box box-container">
-                                        <div class="row">
-                                            <!-- First project -->
-                                            <div class="col-md-12 col-lg">
-                                                <div class="box box-container">
-                                                    <div class="row">
-                                                        <!-- image -->
-                                                        <div class="col-sm-4">
-                                                            <a href="https://veryfitness-celine-y.firebaseapp.com">
-                                                                <img class="fit-width" src="img/veryFitness.png">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-sm justify-text">
-                                                            <strong><a href="https://veryfitness-celine-y.firebaseapp.com">veryFitness</a></strong>
-                                                            <p> An application based around creating new workout routines
-                                                                in order to improve mental and physical fitness. With 
-                                                                this app, you can select your preferred workout strategy
-                                                                and exercises to fit your needs. By keeping track of 
-                                                                previous exercises and showing workout tutorials, you 
-                                                                can improve your techniques, build muscle, and increase
-                                                                overall energy levels!
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Second project -->
-                                            <div class="col-md-12 col-lg">
-                                                <div class="box box-container">
-                                                    <div class="row">
-                                                        <!-- image -->
-                                                        <div class="col-sm-4">
-                                                            <a href="http://www.umbrellabuild.com/">
-                                                                <img class="fit-width" src="img/umbrella-build.png">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-sm justify-text">
-                                                            <strong><a href="http://www.umbrellabuild.com/">Umbrella Build</a></strong>
-                                                            <p> Website built in order to market Umbrella Contracting, related services, and show off previous work.
-                                                                To engage potential customers, this site was created with the intention of providing a way for  
-                                                                the company's contracting services to be requested easily.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Second row of projects -->
-                            <div class="row">
-                                <div class="col-lg">
-                                    <div class="box box-container">
-                                        <div class="row">
-                                            <!-- First project -->
-                                            <div class="col-md-12 col-lg">
-                                                <div class="box box-container">
-                                                    <div class="row">
-                                                        <!-- image -->
-                                                        <div class="col-sm-4">
-                                                            <a href="https://github.com/celine-y/poll-master">
-                                                                <img class="fit-width" src="img/pollMaster.png">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-sm justify-text">
-                                                            <strong><a href="https://github.com/celine-y/poll-master">Pollmaster</a></strong>
-                                                            <p> This app provides a method for groups to make decisions using anonymous polls.
-                                                                By creating an account, you are able to create and share polls with your friends or company in order
-                                                                to provide a discrete method to come up with a decision quickly. This program can separate polls based on urgency
-                                                                and prevents access from people wishing to skew results.
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!-- Second project -->
-                                            <div class="col-md-12 col-lg">
-                                                <div class="box box-container">
-                                                    <div class="row">
-                                                        <!-- image -->
-                                                        <div class="col-sm-4">
-                                                            <a href="https://github.com/celine-y/dropOff">
-                                                                <img class="fit-width" src="img/dropOff.png">
-                                                            </a>
-                                                        </div>
-                                                        <div class="col-sm justify-text">
-                                                            <strong><a href="https://github.com/celine-y/dropOff">dropOff</a></strong>
-                                                            <p> This travel application tailored to university students, provides an environmentally and economically friendly
-                                                                way for students to commute. By allowing users to filter their searches by price and location, it allows 
-                                                                students to find rides more efficiently and drivers to fill up their cars. It holds users accountable for failing to
-                                                                uphold transactions and ensure the availability of seats in the rides.                                                    
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="section" id="interests">
-                    <div class="container">
-                        <div class="flex-grid">
-                            <div class="row center-xs" id="interest-title">
-                                <div class="col-xs">
-                                    <h1>Interests</h1>
-                                </div>
-                            </div>
-                            <div class="row start-xs">
-                                <div class="col-xs col-lg-6 fixed-img-height">
-                                    <div class="tint">
-                                        <a href="https://500px.com/clubs43v">
-                                            <img class="img-fluid fixed-img" src="img/cyslide1.jpg">
-                                            <div class="centered">
-                                                <h3>Photography</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row center-xs">
-                                <div class="col-xs col-lg-6 fixed-img-height">
-                                    <div class="tint">
-                                        <a href="http://www.uwdbc.com/">
-                                            <img class="img-fluid fixed-img" src="img/cyslide2.jpg">
-                                            <div class="centered">
-                                                <h3>Dragon boat</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row end-xs">
-                                <div class="col-xs col-lg-6 fixed-img-height">
-                                    <div class="tint">
-                                        <a href="#">
-                                            <img class="img-fluid fixed-img" src="img/cyslide3.jpg">
-                                            <div class="centered">
-                                                <h3>Travelling</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="section" id="connect">
-                    <div class="container">
-                        <div class="flex-grid">
-                            <div class="row end-xs">
-                                <div class="col-xs">
-                                    <h1>Connect</h1>
-                                </div>
-                            </div>
-                            <div class="row end-xs">
-                                <div class="col-md">
-                                    <a href="https://github.com/celine-y">GitHub</a>
-                                </div>
-                                <div class="col-md">
-                                    <a href="https://www.linkedin.com/in/celineyau/">LinkedIn</a>
-                                </div>
-                                <div class="col-md">
-                                    <a href="emailto: celine.yau@gmail.com">Email</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div class="outside">
+<div class="inside">
+    <div id="preloader">
+        <div id="status">
+            <div class="timer">Loading...</div>
+        </div>
+    </div>
+
+    <!-- HEADER START -->
+    <header id="header">
+        <!--<div class="content">-->
+            <div id="logo"><a href="">Celine Yau</a>
+            </div>
+
+            <nav id="nav">
+                <ul>
+                    <li><a href="#slide1" class="active">Home</a>
+                    </li>
+                    <li><a href="#slide2">About</a>
+                    </li>
+                    <li><a href="#slide3">Skills</a>
+                    </li>
+                    <li><a href="#slide4">Graphic Design</a>
+                    </li>
+                    <li><a href="#slide5">Connect</a>
+                    </li>
+                </ul>
+            </nav>
+        <!--</div>-->
+    </header>
+    <!-- HEADER END-->
+
+    <!-- SLIDES START -->
+
+    <div id="slide1" class="centerOutside area">
+        <div class="centering">
+            <h1 class ="main_attn tight">Celine Yau</h1>
+            <h3 class ="subtitle">Dedicated student & programmer</h3>
+            <h4 class="subtitle">Faculty of Engineering | University of Waterloo</h4>
+        </div>
+    </div>
+
+    <div id="slide2" class="centerOutside">
+        <div class="centering">
+            <div class="quotes_container">
+                <h3 class="quotes">This website serves as a sample of my experience
+				with HTML, CSS, and design. The pictures were all taken by my
+				Fujifilm camera. Enjoy.</h3>
             </div>
         </div>
     </div>
+
+    <div id="slide3" class="centerOutside area light-font">
+        <div class="boxing centering">
+            <div class="quotes_container border fade_dark">
+                        <h2 class="page_title underline">Skills</h2>
+                <!--end row for Headline-->
+                <div class="skills under-heading">
+                    <div class="row">
+                        <div class="col-xs-6 col-md-6">
+                            AJAX</br>
+                            ASP.NET</br>
+                            C#</br>
+                            HTML & CSS</br>
+                            Excel & VBA</br>
+                        </div>
+                        <div class="col-xs-6 col-md-6">
+                            Java</br>
+                            JavaScript</br>
+                            PHP</br>
+                            XML</br>
+                        </div>
+                    </div>
+                </div>
+                <!--end skills-->
+            </div>
+        </div>
+    </div>
+
+
+    <div id="slide4" class="area">
+        <!-- PARENT -->
+        <div id="example" class="mightyslider_modern_skin">
+            <!-- FRAME -->
+            <div class="frame">
+                <!-- SLIDEELEMENT -->
+                <div class="slide_element">
+                    <!-- SLIDES -->
+                    <!-- NEW SLIDE: Music Banquet Ticket-->
+                    <div class="slide" data-mightyslider="
+                        cover: 'img/past-work/Music Banquet Ticket.jpg',
+                    ">
+                        <div class="mSCaption infoBlock topLeft" data-msanimation="{
+                            speed: 700,
+                            easing: 'easeOutQuint',
+                            style: {
+                                left: 30,
+                                opacity: 1,
+                            }
+                        }">
+                            <p>Please, use your <strong>arrow keys</strong> or <strong>swipe</strong> to browse my previous design work.</p>
+                        </div>
+                        <div class="credit">
+                            Music Banquet Tickets
+                        </div>
+                    </div>
+                    <!-- NEW SLIDE: Music Concert Ticket -->
+                    <div class="slide" data-mightyslider="
+                        cover: 'img/past-work/Spring Fever 2015.jpg',
+                    ">
+                        <div class="credit">
+                            Music Concert Ticket
+                        </div>
+                    </div>
+                    <!-- NEW SLIDE: Music Christmas Concert -->
+                    <div class="slide" data-mightyslider="
+                        cover: 'img/past-work/Christmas Concert 2014.jpg',
+                    ">
+                        <div class="credit">
+                            Holiday Concert Music Ticket
+                        </div>
+                    </div>
+                    <!-- END OF SLIDES -->
+                </div>
+                <!-- END OF SLIDEELEMENT -->
+            </div>
+            <!-- END OF FRAME -->
+        </div>
+        <!-- END OF PARENT -->
+    </div>
+
+    <div id="slide5" class="centerOutside area light-font">
+        <div id="connect" class="boxing centering">
+				<div class="quotes_container border fade_dark">
+                    <h2  class ="page_title">Connect With Me</h2>
+                    <div class="list under-heading">
+                        <h4 id ="connect-url" class="sliding-url">
+                                <li><a href="https://ca.linkedin.com/in/celineyau">LinkedIn</a></li>
+                        </h4>
+                        <h4 id ="connect-url" class="sliding-url">
+                                <li><a href="emailto: celine.yau@live.ca">Email</a></li>
+                        </h4>
+                        <h4 id ="connect-url" class="sliding-url">
+                                <li><a href="https://500px.com/clubs43v">500px</a></li>
+                        </h4>
+                    </div>
+				</div>
+        </div>
+
+
+    </div> <!----- SLIDES END --->
+
+    <!--JavaScript sheets-->
+
+    <!--Mighty slider js-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>   
+    <script type="text/javascript" src="Mighty_Slider/assets/js/jquery.easing-1.3.pack.js"></script>
+    <script type="text/javascript" src="Mighty_Slider/assets/js/jquery.mobile.just-touch.js"></script>
+    <script type="text/javascript" src="Mighty_Slider/src/js/tweenlite.js"></script>
+    <script type="text/javascript" src="Mighty_Slider/src/js/mightyslider.min.js"></script>
+    <script type="text/javascript" src="js/pre-load.js"></script>
+    <script type="text/javascript" src="js/cy_mighty.js"></script>
+
+    <!--Navigation -->
+    <!--<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>-->
+	<script type="text/javascript" src="js/nav-slide.js"></script>
+</div>
+</div>
 </body>
 
 </html>

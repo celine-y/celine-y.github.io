@@ -1,0 +1,114 @@
+#example {
+  height: 100vh;
+  overflow: hidden;
+}
+#example .mSButtons {
+  height: 80%;
+}
+#example .frame {
+  width: 100%;
+  height: 100%;
+}
+#example .frame .slide_element {
+  height: 100%;
+}
+#example .frame .slide_element > div {
+  float: left;
+  height: 100%;
+  overflow: hidden;
+}
+#example .frame .mSCover img {
+  max-width: none;
+}
+#example .credit {
+  position: absolute;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  line-height: normal;
+  font-weight: 300;
+  text-shadow: rgba(0,0,0,0.7) 0 1px 0px;
+  color: #ecf2f9;
+  background: #000;
+  background: rgba(0,0,0,0.6);
+  padding: 0 4px;
+  white-space: nowrap;
+  z-index: 1002;
+  text-transform: uppercase;
+}
+#example .credit a {
+  color: white;
+  font-weight: 400;
+}
+.infoBlock {
+  position: absolute;
+  top: 70px;
+  right: 30px;
+  left: auto;
+  max-width: 30%;
+  padding-bottom: 0;
+  background: white;
+  background: rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+  padding: 20px;
+  z-index: 1002;
+}
+.infoBlockLeftBlack {
+  color: white;
+  background: #000;
+  background: rgba(0,0,0,0.55);
+  left: 90px;
+  right: auto;
+  opacity: 0;
+}
+.infoBlock.topLeft{
+  top: 85px;
+  opacity: 0;
+}
+.infoBlock h4 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 0;
+  padding-bottom: 3px;
+  color: inherit;
+  text-align: left;
+}
+.infoBlock p {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 4px 0 0;
+}
+.infoBlock a {
+  color: white;
+  text-decoration: underline;
+}
+
+@media (max-width: 979px) {
+  #example {
+    height: 100%;
+    margin-top: 0;
+  }
+  .infoBlock {
+    min-width: 40%;
+  }
+}
+
+@media (max-width: 768px) {
+  #example {
+    margin: 0 -20px;
+    /*height: 300px;*/
+  }
+  .infoBlock {
+    padding: 10px;
+    height: auto;
+    max-height: 100%;
+  }
+  .infoBlock h4 {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .infoBlock p {
+    font-size: 12px;
+  }
+}
