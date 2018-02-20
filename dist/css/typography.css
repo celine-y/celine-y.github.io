@@ -1,0 +1,52 @@
+.page-header, p, small, h3, h4, a {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-header{
+    text-align: center;
+}
+
+h1, h2 {
+    font-family: 'Roboto', serif;
+    font-variant: small-caps;
+}
+
+h1 {
+    font-size: 6.5vh;
+}
+
+p {
+    font-size: 2.5vh;
+}
+
+small, a {
+    font-size: 2vh;
+    text-transform: uppercase;
+}
+
+a{
+    color: black;
+}
+
+a:hover{
+    color: peachpuff;
+    text-decoration: none;
+}
+
+#landing{
+    color: white;
+}
+
+#interests h1{
+    color: black;
+}
+
+.emphasis{
+    font-variant: small-caps;
+    font-size: 4.5vh;
+}
+
+.justify-text{
+    text-align: justify;
+    text-justify: inter-word;
+}
