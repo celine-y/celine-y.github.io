@@ -19,8 +19,6 @@ $(document).ready(function() {
 		var windowHeight = $('#interests').height();
 		var heightRemain = windowHeight - titleHeight;
 		var newHeight = heightRemain/3 -1;
-
-		console.log(windowHeight, titleHeight, heightRemain, newHeight);
 		
 		$('.fixed-img-height').css("max-height", newHeight);
 	}
