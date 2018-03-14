@@ -1,13 +1,5 @@
-@font-face {
-    font-family: "Simplifica";
-    src: url("fonts/Simplifica.ttf.eot");
-    src: 
-    url("fonts/Simplifica.ttf.woff") format("woff"),
-    url("fonts/Simplifica.tff.svg") format("svg");
-}
-
 .page-header, p, small, h3, h4, a {
-    font-family: 'Simplifica', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .page-header{
@@ -15,20 +7,20 @@
 }
 
 h1, h2 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto', serif;
     font-variant: small-caps;
 }
 
 h1 {
-    font-size: 8vh;
+    font-size: 6.5vh;
 }
 
 p {
-    font-size: 3.5vh;
+    font-size: 2.5vh;
 }
 
 small, a {
-    font-size: 3vh;
+    font-size: 2vh;
     text-transform: uppercase;
 }
 
@@ -51,7 +43,7 @@ a:hover{
 
 .emphasis{
     font-variant: small-caps;
-    font-size: 6.5vh;
+    font-size: 4.5vh;
 }
 
 .justify-text{
