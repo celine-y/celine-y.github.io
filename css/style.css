@@ -12,6 +12,7 @@
   --pearl: #FBF9F3;
   --light-grey: #95a5a6;
   --dark-grey: #333;
+  --brown: #2f2f2f;
 }
 
 body {
@@ -242,10 +243,13 @@ SECTION WRAPS
   color: var(--pearl);
 }
 
+.dark.footer{
+  background: var(--brown);
+}
+
 /* Footer Wrap */
 
 #footwrap {
-  background: #2f2f2f;
   padding-top: 50px;
   padding-bottom: 50px;
 }
