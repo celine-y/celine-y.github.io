@@ -1,79 +1,92 @@
+jQuery(document).ready(function( $ ) {
 
-(function ($) {
-    "use strict";
+  // Smooth scroll for the menu and links with .scrollto classes
+  $('.smothscroll').on('click', function(e) {
+    e.preventDefault();
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
 
-    /*==================================================================
-    [ Validate ]*/
-    var input = $('.validate-input .input100');
-
-    $('.validate-form').on('submit',function(){
-        var check = true;
-
-        for(var i=0; i<input.length; i++) {
-            if(validate(input[i]) == false){
-                showValidate(input[i]);
-                check=false;
-            }
-        }
-
-        return check;
-    });
-
-
-    $('.validate-form .input100').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
-        });
-    });
-
-    function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
-            }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
-        }
+        $('html, body').animate({
+          scrollTop: target.offset().top - 62
+        }, 1500, 'easeInOutExpo');
+      }
     }
+  });
 
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
+  $('.carousel').carousel({
+    interval: 3500
+  });
 
-        $(thisAlert).addClass('alert-validate');
+  // JavaScript Chart
+  var doughnutData = [{
+      value: 70,
+      color: "#1abc9c"
+    },
+    {
+      value: 30,
+      color: "#ecf0f1"
     }
+  ];
+  var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
 
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
+  // Bootstrap Chart
+  var doughnutData = [{
+    value: 90,
+    color: "#1abc9c"
+  },
+  {
+    value: 10,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
 
-        $(thisAlert).removeClass('alert-validate');
-    }
+  // WordPress Chart
+  var doughnutData = [{
+    value: 65,
+    color: "#1abc9c"
+  },
+  {
+    value: 35,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
 
-    
-    
-    /*==================================================================
-    [ Simple slide100 ]*/
+  // HTML Chart
+  var doughnutData = [{
+    value: 80,
+    color: "#1abc9c"
+  },
+  {
+    value: 20,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
 
-    $('.simpleslide100').each(function(){
-        var delay = 7000;
-        var speed = 1000;
-        var itemSlide = $(this).find('.simpleslide100-item');
-        var nowSlide = 0;
+  // Photoshop Chart
+  var doughnutData = [{
+    value: 70,
+    color: "#1abc9c"
+  },
+  {
+    value: 30,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
 
-        $(itemSlide).hide();
-        $(itemSlide[nowSlide]).show();
-        nowSlide++;
-        if(nowSlide >= itemSlide.length) {nowSlide = 0;}
-
-        setInterval(function(){
-            $(itemSlide).fadeOut(speed);
-            $(itemSlide[nowSlide]).fadeIn(speed);
-            nowSlide++;
-            if(nowSlide >= itemSlide.length) {nowSlide = 0;}
-        },delay);
-    });
-
-
-})(jQuery);
+  // Illustrator Chart
+  var doughnutData = [{
+    value: 50,
+    color: "#1abc9c"
+  },
+  {
+    value: 50,
+    color: "#ecf0f1"
+  }
+  ];
+  var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+});
