@@ -8,7 +8,7 @@ jQuery(document).ready(function( $ ) {
       if (target.length) {
 
         $('html, body').animate({
-          scrollTop: target.offset().top - 62
+          scrollTop: target.offset().top - 53
         }, 1500, 'easeInOutExpo');
       }
     }
@@ -18,75 +18,78 @@ jQuery(document).ready(function( $ ) {
     interval: 3500
   });
 
-  // JavaScript Chart
+  var skillColor = "#33E1ED"
+  var emptyColor = "#95a5a6"
+
+  var skillLevel = 100
   var doughnutData = [{
-      value: 70,
-      color: "#1abc9c"
+      value: skillLevel,
+      color: skillColor
     },
     {
-      value: 30,
-      color: "#ecf0f1"
+      value: 100-skillLevel,
+      color: emptyColor
     }
   ];
-  var myDoughnut = new Chart(document.getElementById("javascript").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("skill1").getContext("2d")).Doughnut(doughnutData);
 
-  // Bootstrap Chart
+  var skillLevel = 75
   var doughnutData = [{
-    value: 90,
-    color: "#1abc9c"
-  },
-  {
-    value: 10,
-    color: "#ecf0f1"
-  }
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
   ];
-  var myDoughnut = new Chart(document.getElementById("bootstrap").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("skill2").getContext("2d")).Doughnut(doughnutData);
 
-  // WordPress Chart
+  var skillLevel = 80
   var doughnutData = [{
-    value: 65,
-    color: "#1abc9c"
-  },
-  {
-    value: 35,
-    color: "#ecf0f1"
-  }
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
   ];
-  var myDoughnut = new Chart(document.getElementById("wordpress").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("skill3").getContext("2d")).Doughnut(doughnutData);
 
-  // HTML Chart
+  var skillLevel = 80
   var doughnutData = [{
-    value: 80,
-    color: "#1abc9c"
-  },
-  {
-    value: 20,
-    color: "#ecf0f1"
-  }
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
   ];
-  var myDoughnut = new Chart(document.getElementById("html").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("skill4").getContext("2d")).Doughnut(doughnutData);
 
-  // Photoshop Chart
+  var skillLevel = 75
   var doughnutData = [{
-    value: 70,
-    color: "#1abc9c"
-  },
-  {
-    value: 30,
-    color: "#ecf0f1"
-  }
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
   ];
-  var myDoughnut = new Chart(document.getElementById("photoshop").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("skill5").getContext("2d")).Doughnut(doughnutData);
 
-  // Illustrator Chart
+  var skillLevel = 100
   var doughnutData = [{
-    value: 50,
-    color: "#1abc9c"
-  },
-  {
-    value: 50,
-    color: "#ecf0f1"
-  }
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
   ];
-  var myDoughnut = new Chart(document.getElementById("illustrator").getContext("2d")).Doughnut(doughnutData);
+  var myDoughnut = new Chart(document.getElementById("skill6").getContext("2d")).Doughnut(doughnutData);
 });

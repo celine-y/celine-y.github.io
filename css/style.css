@@ -10,7 +10,7 @@
   --sky-blue: #33E1ED;
   --dark-blue: #00414f;
   --pearl: #FBF9F3;
-  --light-grey: #95a5a6;
+  --light-grey: #b1c3c4;
   --dark-grey: #333;
   --brown: #2f2f2f;
 }
@@ -20,7 +20,7 @@ body {
   font-family: "Lato";
   font-weight: 300;
   font-size: 16px;
-  color: var(--dark-blue);
+  color: var(--dark-grey);
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 }
@@ -30,30 +30,20 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   font-weight: 300;
-  color: var(--dark-grey);
+}
+
+.dark {
+  color: var(--pearl);
 }
 
 /* Paragraph & Typographic */
 
 p {
-  line-height: 28px;
   margin-bottom: 25px;
 }
 
 .centered {
   text-align: center;
-}
-
-/* General Sections */
-.section-header{
-  text-transform: uppercase;
-}
-
-.position {
-  font-weight: bold;
-}
-
-.company {
 }
 
 /* Links */
@@ -69,7 +59,7 @@ a {
 }
 
 a:hover, a:focus {
-  color: #7b7b7b;
+  color: var(--mint);
   text-decoration: none;
   outline: 0;
 }
@@ -86,7 +76,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid var(--light-grey);
   margin: 1em 0;
   padding: 0;
 }
@@ -145,21 +135,20 @@ By default, top navigation bar uses "fixed" position
 }
 
 #section-topbar ul#nav a:focus {
-  background: var(--sky-blue);
+  background: var(--dark-blue);
+  color: var(--sky-blue);
   text-decoration: none;
 }
 
 #section-topbar ul#nav a:hover {
-  background: var(--sky-blue);
+  background: var(--dark-blue);
+  color: var(--sky-blue);
   text-decoration: none;
 }
 
 #section-topbar ul#nav .active a {
   background: var(--mint);
-}
-
-#section-topbar ul#nav .active a:hover {
-  background: var(--mint);
+  color: var(--dark-blue)
 }
 
 #section-topbar i {
@@ -181,7 +170,7 @@ SECTION WRAPS
     ),
     /* your image */
     url(../img/bg01.jpg);
-  margin-top: 60px;
+  margin-top: 54px;
   padding-top: 45vh;
   text-align: center;
   background-attachment: relative;
@@ -208,16 +197,30 @@ SECTION WRAPS
   color: var(--pearl);
 }
 
+.smothscroll{
+  text-transform: uppercase;
+}
+
 /* Intro Wrap */
 #intro {
   padding-top: 60px;
   padding-bottom: 60px;
-  color: var(--pearl);
+}
+
+/* About Section */
+#resume {
+  font-weight: bold;
+}
+
+/* Project Section */
+#project-header{
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 /* Dark Wrap */
 
-.dark h2, h5, p {
+.dark {
   color: var(--pearl);
 }
 
@@ -262,13 +265,6 @@ SECTION WRAPS
   color: var(--pearl);
 }
 
-#intro {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  color: var(--pearl);
-}
-
-
 #footwrap t {
   font-weight: 700;
 }
@@ -284,7 +280,7 @@ SECTION WRAPS
   background: #222222;
   padding: 20px 0;
   text-align: center;
-  color: #fff;
+  color: #222222;
   font-size: 16px;
 }
 
@@ -292,101 +288,63 @@ SECTION WRAPS
   margin: 0 0 5px 0;
 }
 
-.credits {
-  color: #999;
+#copyrights a {
+  color: inherit;
 }
 
 /* Global Values */
 
 .desc {
   padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .desc p {
-  color: #2f2f2f;
-}
-
-.desc t {
-  color: #00174d;
-  font-weight: 700;
-}
-
-.desc imp {
-  padding: 6px;
-  color: var(--pearl);
-  background: #00174d;
-}
-
- {
-  color: #95a5a6;
+  color: var(--dark-grey);
 }
 
 sm {
   font-size: 12px;
 }
 
+.section-header{
+  text-transform: uppercase;
+}
+
+.position {
+  font-weight: bold;
+}
+
+.company {
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
 .caps {
   text-transform: uppercase;
 }
 
-/* Contact Form */
-
-.contact-form label {
-  color: #999;
-}
-
-.contact-form input, .contact-form textarea {
-  padding: 10px 12px;
-  border-radius: 0;
-  box-shadow: none;
-  font-size: 14px;
-  height: auto;
-}
-
-.contact-form .form-send {
-  text-align: center;
-}
-
-.contact-form .form-send button {
-  background: var(--sky-blue);
+.button {
+  background: var(--dark-blue);
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: var(--pearl);
   transition: 0.4s;
   cursor: pointer;
 }
-
-.contact-form .form-send button:hover {
-  background: #23c8b1;
+div.project {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
-.contact-form .validate {
-  display: none;
-  color: red;
-  margin: 0 0 15px 0;
-  font-weight: 400;
-  font-size: 13px;
+.button:hover{
+  background: var(--mint);
+  color: var(--dark-blue)
 }
 
-.contact-form .loading {
-  display: none;
-  color: #555;
-  background: #fff;
-  text-align: center;
-  padding: 15px;
-  margin: 15px 0;
-}
-
-.contact-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  border: 3px solid #18d26e;
-  border-top-color: #eee;
-  -webkit-animation: animate-loading 1s linear infinite;
-  animation: animate-loading 1s linear infinite;
+.button.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 @-webkit-keyframes animate-loading {
@@ -411,24 +369,4 @@ sm {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
   }
-}
-
-.contact-form .error-message {
-  display: none;
-  color: #fff;
-  background: #ed3c0d;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
-}
-
-.contact-form .sent-message {
-  display: none;
-  color: #fff;
-  background: #18d26e;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin: 15px 0;
 }
