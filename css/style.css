@@ -1,0 +1,372 @@
+/**
+*  Template Name: Kelvin
+*  Template URL: https://templatemag.com/kelvin-bootstrap-resume-template/
+*  Author: TemplateMag.com
+*  License: https://templatemag.com/license/
+*/
+
+:root {
+  --mint: #a6ffea;
+  --sky-blue: #33E1ED;
+  --dark-blue: #00414f;
+  --pearl: #FBF9F3;
+  --light-grey: #b1c3c4;
+  --dark-grey: #333;
+  --brown: #2f2f2f;
+}
+
+body {
+  background-color: var(--pearl);
+  font-family: "Lato";
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--dark-grey);
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Titles */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway";
+  font-weight: 300;
+}
+
+.dark {
+  color: var(--pearl);
+}
+
+/* Paragraph & Typographic */
+
+p {
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+}
+
+/* Links */
+
+a {
+  color: var(--dark-blue);
+  word-wrap: break-word;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+a:hover, a:focus {
+  color: var(--mint);
+  text-decoration: none;
+  outline: 0;
+}
+
+a:before, a:after {
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid var(--light-grey);
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*---------------------------------------------------
+3.1 Topbar
+---------------------------------------------------*/
+
+#section-topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+  overflow: visible;
+  font: normal 16px/24px 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#section-topbar a {
+  color: var(--dark-blue);
+}
+
+#topbar-inner {
+  background: var(--pearl);
+  line-height: 0;
+  text-align: center;
+}
+
+/*
+Top Bar
+
+By default, top navigation bar uses "fixed" position
+*/
+
+#section-topbar ul#nav {
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  /* For IE, the outcast */
+  zoom: 1;
+  *display: inline;
+}
+
+#section-topbar ul#nav>li {
+  display: block;
+  float: left;
+  padding: 0;
+}
+
+#section-topbar ul#nav a {
+  display: block;
+  font: normal 11px/18px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  padding: 18px 20px 18px 20px;
+}
+
+#section-topbar ul#nav a:focus {
+  background: var(--dark-blue);
+  color: var(--sky-blue);
+  text-decoration: none;
+}
+
+#section-topbar ul#nav a:hover {
+  background: var(--dark-blue);
+  color: var(--sky-blue);
+  text-decoration: none;
+}
+
+#section-topbar ul#nav .active a {
+  background: var(--mint);
+  color: var(--dark-blue)
+}
+
+#section-topbar i {
+  font-size: 25px;
+}
+
+/*---------------------------------------------------
+SECTION WRAPS
+---------------------------------------------------*/
+
+/* Header Wrap */
+
+#headerwrap {
+  background-image:
+    /* top, transparent red */
+    linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(0, 0, 0, 0.25)
+    ),
+    /* your image */
+    url(../img/bg01.jpg);
+  margin-top: 54px;
+  padding-top: 45vh;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 70vh;
+  width: 100%;
+  -webkit-background-size: 100%;
+  -moz-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#headerwrap h1 {
+  font-size: 80px;
+  color: var(--pearl);
+}
+
+#headerwrap h2 {
+  font-size: 20px;
+  color: var(--pearl);
+}
+
+.smothscroll{
+  text-transform: uppercase;
+}
+
+/* Intro Wrap */
+#intro {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* About Section */
+#resume {
+  font-weight: bold;
+}
+
+/* Project Section */
+#project-header{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+/* Dark Wrap */
+
+.dark {
+  color: var(--pearl);
+}
+
+.dark a {
+  color: var(--sky-blue);
+}
+
+.dark a:hover{
+  color: var(--pearl);
+}
+
+.dark i {
+  color: var(--pearl);
+  font-size: 20px;
+  padding-right: 8px;
+  vertical-align: middle;
+}
+
+.dark {
+  background: var(--dark-blue);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  color: var(--pearl);
+}
+
+.dark.footer{
+  background: var(--brown);
+}
+
+/* Footer Wrap */
+
+#footwrap {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#footwrap p {
+  color: var(--pearl);
+}
+
+#footwrap h5 {
+  color: var(--pearl);
+}
+
+#footwrap t {
+  font-weight: 700;
+}
+
+#footwrap i {
+  padding-right: 8px;
+  color: var(--sky-blue);
+}
+
+/* Copyright Wrap */
+
+#copyrights {
+  background: #222222;
+  padding: 20px 0;
+  text-align: center;
+  color: #222222;
+  font-size: 16px;
+}
+
+#copyrights p {
+  margin: 0 0 5px 0;
+}
+
+#copyrights a {
+  color: inherit;
+}
+
+/* Global Values */
+
+.desc {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.desc p {
+  color: var(--dark-grey);
+}
+
+sm {
+  font-size: 12px;
+}
+
+.section-header{
+  text-transform: uppercase;
+}
+
+.position {
+  font-weight: bold;
+}
+
+.company {
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.button {
+  background: var(--dark-blue);
+  border: 0;
+  padding: 10px 30px;
+  color: var(--pearl);
+  transition: 0.4s;
+  cursor: pointer;
+}
+div.project {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.button:hover{
+  background: var(--mint);
+  color: var(--dark-blue)
+}
+
+.button.disabled{
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+@-webkit-keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}

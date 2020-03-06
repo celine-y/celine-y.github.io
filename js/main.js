@@ -1,79 +1,95 @@
+jQuery(document).ready(function( $ ) {
 
-(function ($) {
-    "use strict";
+  // Smooth scroll for the menu and links with .scrollto classes
+  $('.smothscroll').on('click', function(e) {
+    e.preventDefault();
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      if (target.length) {
 
-    /*==================================================================
-    [ Validate ]*/
-    var input = $('.validate-input .input100');
-
-    $('.validate-form').on('submit',function(){
-        var check = true;
-
-        for(var i=0; i<input.length; i++) {
-            if(validate(input[i]) == false){
-                showValidate(input[i]);
-                check=false;
-            }
-        }
-
-        return check;
-    });
-
-
-    $('.validate-form .input100').each(function(){
-        $(this).focus(function(){
-           hideValidate(this);
-        });
-    });
-
-    function validate (input) {
-        if($(input).attr('type') == 'email' || $(input).attr('name') == 'email') {
-            if($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
-                return false;
-            }
-        }
-        else {
-            if($(input).val().trim() == ''){
-                return false;
-            }
-        }
+        $('html, body').animate({
+          scrollTop: target.offset().top - 53
+        }, 1500, 'easeInOutExpo');
+      }
     }
+  });
 
-    function showValidate(input) {
-        var thisAlert = $(input).parent();
+  $('.carousel').carousel({
+    interval: 3500
+  });
 
-        $(thisAlert).addClass('alert-validate');
+  var skillColor = "#33E1ED"
+  var emptyColor = "#95a5a6"
+
+  var skillLevel = 100
+  var doughnutData = [{
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
     }
+  ];
+  var myDoughnut = new Chart(document.getElementById("skill1").getContext("2d")).Doughnut(doughnutData);
 
-    function hideValidate(input) {
-        var thisAlert = $(input).parent();
-
-        $(thisAlert).removeClass('alert-validate');
+  var skillLevel = 75
+  var doughnutData = [{
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
     }
+  ];
+  var myDoughnut = new Chart(document.getElementById("skill2").getContext("2d")).Doughnut(doughnutData);
 
-    
-    
-    /*==================================================================
-    [ Simple slide100 ]*/
+  var skillLevel = 80
+  var doughnutData = [{
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
+  ];
+  var myDoughnut = new Chart(document.getElementById("skill3").getContext("2d")).Doughnut(doughnutData);
 
-    $('.simpleslide100').each(function(){
-        var delay = 7000;
-        var speed = 1000;
-        var itemSlide = $(this).find('.simpleslide100-item');
-        var nowSlide = 0;
+  var skillLevel = 80
+  var doughnutData = [{
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
+  ];
+  var myDoughnut = new Chart(document.getElementById("skill4").getContext("2d")).Doughnut(doughnutData);
 
-        $(itemSlide).hide();
-        $(itemSlide[nowSlide]).show();
-        nowSlide++;
-        if(nowSlide >= itemSlide.length) {nowSlide = 0;}
+  var skillLevel = 75
+  var doughnutData = [{
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
+  ];
+  var myDoughnut = new Chart(document.getElementById("skill5").getContext("2d")).Doughnut(doughnutData);
 
-        setInterval(function(){
-            $(itemSlide).fadeOut(speed);
-            $(itemSlide[nowSlide]).fadeIn(speed);
-            nowSlide++;
-            if(nowSlide >= itemSlide.length) {nowSlide = 0;}
-        },delay);
-    });
-
-
-})(jQuery);
+  var skillLevel = 100
+  var doughnutData = [{
+      value: skillLevel,
+      color: skillColor
+    },
+    {
+      value: 100-skillLevel,
+      color: emptyColor
+    }
+  ];
+  var myDoughnut = new Chart(document.getElementById("skill6").getContext("2d")).Doughnut(doughnutData);
+});
