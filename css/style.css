@@ -160,16 +160,12 @@ SECTION WRAPS
 ---------------------------------------------------*/
 
 /* Header Wrap */
+#headerwrap::before{
+  background-color: rgba(0,0,0, 0.25);
+}
 
 #headerwrap {
-  background-image:
-    /* top, transparent red */
-    linear-gradient(
-      rgba(255, 255, 255, 0),
-      rgba(0, 0, 0, 0.25)
-    ),
-    /* your image */
-    url(../img/bg01.jpg);
+  background: url(../img/bg01.jpg);
   margin-top: 54px;
   padding-top: 55vh;
   text-align: center;
