@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Paragraph & Typographic */
 
-p {
+.tech {
   margin-bottom: 25px;
 }
 
@@ -165,7 +165,7 @@ SECTION WRAPS
 }
 
 #headerwrap {
-  background: url(../img/bg01.jpg);
+  background: url(../img/bg03.jpg);
   margin-top: 54px;
   padding-top: 55vh;
   text-align: center;
@@ -307,13 +307,29 @@ sm {
   text-transform: uppercase;
 }
 
+/* COMPANY AND PROJECTS */
+
 .position {
-  font-weight: bold;
+  margin-top: 0;
 }
 
-.company {
-  letter-spacing: -1px;
-  text-transform: uppercase;
+.company-logo {
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.row.company, .row.project {
+  margin: 0 0 2em 0;
+}
+
+/* IMAGES */
+img.tech-logo {
+  width: 2em;
+}
+
+img.school-logo {
+  width: 30%;
 }
 
 .caps {
@@ -321,16 +337,13 @@ sm {
 }
 
 .button {
+  display:inline-block;
   background: var(--dark-blue);
   border: 0;
   padding: 10px 30px;
   color: var(--pearl);
   transition: 0.4s;
   cursor: pointer;
-}
-div.project {
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
 .button:hover{
