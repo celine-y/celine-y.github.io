@@ -38,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Paragraph & Typographic */
 
-p {
+.tech {
   margin-bottom: 25px;
 }
 
@@ -328,11 +328,16 @@ img.tech-logo {
   width: 2em;
 }
 
+img.school-logo {
+  width: 30%;
+}
+
 .caps {
   text-transform: uppercase;
 }
 
 .button {
+  display:inline-block;
   background: var(--dark-blue);
   border: 0;
   padding: 10px 30px;
