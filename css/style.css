@@ -307,23 +307,25 @@ sm {
   text-transform: uppercase;
 }
 
+/* COMPANY AND PROJECTS */
+
 .position {
-  font-weight: bold;
+  margin-top: 0;
 }
 
-.company-name {
-  margin: 0;
-  width: 50%;
-  letter-spacing: -1px;
-  text-transform: uppercase;
+.company-logo {
+  max-height: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
 }
 
 .row.company, .row.project {
   margin: 0 0 2em 0;
 }
 
-.company-logo {
-  width: inherit;
+/* IMAGES */
+img.tech-logo {
+  width: 2em;
 }
 
 .caps {
